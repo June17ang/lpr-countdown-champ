@@ -29,3 +29,8 @@ code {
 .clock:not(:first-child) {
   margin-left: 30px;
 }
+
+.deadlineInput {
+  font-size: 25px;
+  margin: 5px;
+}
