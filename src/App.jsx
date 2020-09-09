@@ -4,7 +4,15 @@ import Clock from "./Clock";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { deadline: "December 25, 2020" };
+    this.state = { deadline: "", newDeadline: "" };
+  }
+
+  componentWillMount() {
+    const curYear = new Date().getFullYear();
+
+    this.setState({
+      deadline: "Dec 25, " + curYear,
+    });
   }
 
   changeDeadline = () => {
@@ -15,7 +23,7 @@ class App extends Component {
     return (
       <div className="app">
         <div className="title">Countdown to {this.state.deadline}</div>
-        <Clock />
+        <Clock deadline={this.state.deadline} />
         <div>
           <input
             placeholder="New Date"
