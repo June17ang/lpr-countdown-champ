@@ -1,4 +1,10 @@
+## Countdown Champ
+
 Refer tutorial to Udemy [React JS Web Development - The Essentials Bootcamp](https://www.udemy.com/course/react-js-and-redux-mastering-web-apps/)
+
+Features:
+- Able to insert a date
+- Count down according input date
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
